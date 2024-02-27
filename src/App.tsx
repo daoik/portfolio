@@ -6,7 +6,7 @@ import IntroCard from "./components/IntroCard";
 function App() {
   return (
     <>
-      <div className="w-screen h-screen flex flex-col p-5 bg-stone-800 items-center noise">
+      <div className="w-screen h-screen flex flex-col p-5 bg-stone-200 items-center noise">
         <IntroCard />
       </div>
     </>

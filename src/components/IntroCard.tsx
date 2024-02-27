@@ -1,9 +1,10 @@
 import memoji from "../assets/memoji.png";
+import { FaDownload } from "react-icons/fa";
 
 const IntroCard = () => {
   return (
-    <div className="rounded-lg w-fit relative overflow-hidden ">
-      <div className="w-full h-full  p-2 ">
+    <div className="rounded-lg w-fit relative bg-stone-900 border-slate-300 border ring-4 ring-stone-900  overflow-hidden ">
+      <div className="w-full h-full  p-4 ">
         <div className="flex justify-between ">
           <div className="flex flex-col">
             <span className="text-xl inline-flex text-neutral-200">
@@ -34,6 +35,14 @@ const IntroCard = () => {
         <p className="text-md mt-5 text-neutral-200">
           I like building stuff and making them look good.
         </p>
+        <div className="inline-flex w-full space-x-10 mt-2">
+          <button className="mt-3 rounded-lg text-slate-300 p-1 px-2 border-slate-300 border hover:bg-slate-300 hover:text-pink-600 transition-all">
+            Hire Me
+          </button>
+          <button className="mt-3 rounded-lg hover:scale-105  p-1 px-2 border-slate-300 border hover:text-pink-700 bg-slate-300 text-pink-600 transition-all inline-flex items-center">
+            <FaDownload className="me-1" /> Download CV
+          </button>
+        </div>
       </div>
     </div>
   );
