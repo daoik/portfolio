@@ -39,10 +39,10 @@ const IntroCard = () => {
             I like building stuff and making them look good.
           </p>
           <div className="inline-flex w-full space-x-10 mt-2">
-            <button className="mt-3 rounded-lg text-slate-300 p-1 px-2 border-slate-300 border hover:bg-slate-300 hover:text-pink-600 transition-all">
+            <button className="mt-3 cursor-pointer rounded-lg text-slate-300 p-1 px-2 border-slate-300 border hover:bg-slate-300 hover:text-pink-600 transition-all">
               Hire Me
             </button>
-            <button className="mt-3 rounded-lg hover:scale-105  p-1 px-2 border-slate-300 border hover:text-pink-700 bg-slate-300 text-pink-600 transition-all inline-flex items-center">
+            <button className="mt-3 cursor-pointer rounded-lg hover:scale-105  p-1 px-2 border-slate-300 border hover:text-teal-600 bg-slate-300 text-pink-600 transition-all inline-flex items-center">
               <FaDownload className="me-1" /> Download CV
             </button>
           </div>

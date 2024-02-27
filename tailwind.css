@@ -786,6 +786,10 @@ video {
   animation: wave 1.5s infinite;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1659,6 +1663,16 @@ video {
   color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
+.hover\:text-teal-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+}
+
+.hover\:text-teal-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-50:hover {
   opacity: 0.5;
 }
@@ -1707,6 +1721,10 @@ video {
 
 .group:hover .group-hover\:rounded-none {
   border-radius: 0px;
+}
+
+.group:hover .group-hover\:rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .group:hover .group-hover\:p-0 {
