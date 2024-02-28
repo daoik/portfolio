@@ -30,7 +30,7 @@ const LinkButtons = () => {
           key={index}
           href={link.href}
           className="cursor-pointer shadow-xl rounded-full group  bg-gradient-to-br from-neutral-100 to-neutral-400 p-2 hover:border-teal-600"
-          transition={{ delay: index * buttonDelay }}
+          transition={{ delay: 1 + index * buttonDelay }}
           variants={buttonVariants}
           initial="hidden"
           animate="visible"

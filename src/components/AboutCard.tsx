@@ -1,15 +1,23 @@
-import memoji from "../assets/memoji.png";
-import { FaDownload } from "react-icons/fa";
-import LinkButtons from "./LinkButtons";
-import Blob from "./Blob";
-
+import { motion } from "framer-motion";
 const AboutCard = () => {
   return (
     <div className="m-2 w-96 text-neutral-200 mx-auto">
-      <div className="rounded-lg w-full z-20 relative  ">
-        <div className="w-full h-full p-4">
-          <div className="text-5xl font-semibold">About</div>
-          <p className=" tex-lg ">
+      <div className="rounded-lg w-full z-20 relative">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Initial animation values
+          animate={{ opacity: 1, y: 0 }} // Animation to perform
+          transition={{ duration: 0.5 }} // Transition duration
+          className="w-full h-full p-4"
+        >
+          <div className="text-5xl p-1 py-5 font-semibold">
+            {`<`}About{`/>`}
+          </div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }} // Initial animation values
+            animate={{ opacity: 1, y: 0 }} // Animation to perform
+            transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
+            className="ps-8 tex-lg"
+          >
             Passionate and dedicated Frontend Developer with a keen eye for
             design and a flair for creating intuitive user experiences.
             Proficient in HTML, CSS, JavaScript, and modern frontend frameworks
@@ -20,8 +28,8 @@ const AboutCard = () => {
             business goals. Committed to staying updated with the latest trends
             and technologies in frontend development and design to continuously
             improve and innovate.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
     </div>
   );
