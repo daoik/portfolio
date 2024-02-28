@@ -2,13 +2,15 @@ import { useState } from "react";
 import Blob from "./components/Blob";
 import "./App.css";
 import IntroCard from "./components/IntroCard";
+import AboutCard from "./components/AboutCard";
 
 function App() {
   return (
     <>
-      <div className="w-screen h-screen flex flex-col p-5 bg-stone-200 items-center noise relative">
+      <div className="w-screen h-screen flex flex-col md:flex-row p-5 noise bg-neutral-800  relative">
         <IntroCard />
-        <Blob />
+        <AboutCard />
+        {/* <Blob /> */}
       </div>
     </>
   );

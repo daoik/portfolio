@@ -12,7 +12,7 @@ const LinkButtons = () => {
   const buttonDelay = 0.1;
 
   return (
-    <div className="inline-flex mt-4 z-10 justify-around w-full ">
+    <div className="inline-flex mt-4 z-20 justify-around w-full ">
       {[
         { href: "https://github.com/daoik", icon: <FaGithub /> },
         {
@@ -29,7 +29,7 @@ const LinkButtons = () => {
         <motion.a
           key={index}
           href={link.href}
-          className="cursor-pointer rounded-full group bg-gradient-to-br from-neutral-900 to-neutral-700 border-slate-300 hover:border-teal-600 border-2 ring-4 ring-stone-900"
+          className="cursor-pointer shadow-xl rounded-full group  bg-gradient-to-br from-neutral-100 to-neutral-400 p-2 hover:border-teal-600"
           transition={{ delay: index * buttonDelay }}
           variants={buttonVariants}
           initial="hidden"
@@ -37,7 +37,7 @@ const LinkButtons = () => {
         >
           {React.cloneElement(link.icon, {
             className:
-              "w-10 p-1 group-hover:p-0.5 h-10 text-stone-200 transition-all duration-75 rounded-full group-hover:text-pink-500",
+              "w-10 p-1 group-hover:p-0.5 h-10 text-stone-800 transition-all duration-75  group-hover:text-pink-500",
           })}
         </motion.a>
       ))}

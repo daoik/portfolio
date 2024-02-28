@@ -22,26 +22,34 @@ const Blob = () => {
   }, [paths.length]);
 
   return (
-    <motion.svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="absolute z-0 left-0"
+      viewBox="0 0 400 400"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <motion.path
         d={paths[index]}
         fill="#FAFAFA"
         initial={false}
         animate={{ d: paths[index] }}
         transition={{ type: "spring", stiffness: 160 }}
-        transform="translate(93 90)"
-        className="opacity-50 fill-pink-800"
-      />
-      <foreignObject width="300" height="400" transform="translate(50 50)">
-        <div className="text-4xl">About</div>
-        <p>
+        transform="translate(100 80)"
+        className=" fill-emerald-300 "
+      >
+        {" "}
+      </motion.path>
+      {/* <foreignObject width="300" height="400" transform="translate(50 50)">
+        <div className="text-4xl bold bg-emerald-300 w-min text-pink-500 rounded-xl p-1 ">
+          About
+        </div>
+        <p className="text-sm text-pretty  p-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
           perferendis nemo in iusto, enim vel, expedita obcaecati voluptate quo
           reprehenderit sunt minus fuga fugiat aliquid molestiae, atque magnam
           autem unde!
         </p>
-      </foreignObject>
-    </motion.svg>
+      </foreignObject> */}
+    </svg>
   );
 };
 

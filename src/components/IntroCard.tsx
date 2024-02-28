@@ -4,12 +4,12 @@ import LinkButtons from "./LinkButtons";
 
 const IntroCard = () => {
   return (
-    <div>
-      <div className="rounded-lg w-fit z-20 relative bg-gradient-to-br from-neutral-900 to-neutral-700 border-slate-300 border-2 ring-4 ring-stone-900 overflow-hidden">
-        <div className="w-full h-full p-4">
+    <div className="m-2 w-fit mx-auto">
+      <div className="rounded-lg w-96 z-20 shadow-xl relative bg-gradient-to-br from-neutral-100 to-neutral-400 overflow-hidden">
+        <div className="w-full h-full p-5">
           <div className="flex justify-between">
             <div className="flex flex-col">
-              <span className="text-xl inline-flex text-neutral-200">
+              <span className="text-xl inline-flex text-neutral-800">
                 Hi <div className="animate-wave mx-2 w-min">👋</div> I'm
                 Dimitris
               </span>
@@ -34,14 +34,14 @@ const IntroCard = () => {
             </div>
             <img src={memoji} alt="memoji" className="h-20 rounded-full" />
           </div>
-          <p className="text-md mt-5 text-neutral-200">
+          <p className="text-md mt-5 text-neutral-800">
             I like building stuff and making them look good.
           </p>
           <div className="inline-flex w-full space-x-10 mt-2">
-            <button className="mt-3 cursor-pointer rounded-lg text-slate-300 p-1 px-2 border-slate-300 border hover:bg-slate-300 hover:text-pink-600 transition-all">
+            <button className="mt-3 cursor-pointer rounded-lg text-slate-700 p-1 px-2 border-slate-700 border hover:bg-gradient-to-tr from-neutral-900 to-neutral-700 hover:text-pink-600 transition-all">
               Hire Me
             </button>
-            <button className="mt-3 cursor-pointer rounded-lg hover:scale-105 p-1 px-2 border-slate-300 border text-slate-800 bg-slate-300 hover:text-pink-600 transition-all inline-flex items-center">
+            <button className="mt-3 cursor-pointer rounded-lg hover:scale-105 p-1 px-2 border-slate-700 border text-neutral-200 bg-gradient-to-tr from-neutral-900 to-neutral-700 hover:text-pink-600 transition-all inline-flex items-center">
               <FaDownload className="me-1" /> Download CV
             </button>
           </div>
