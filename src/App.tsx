@@ -7,10 +7,14 @@ import AboutCard from "./components/AboutCard";
 function App() {
   return (
     <>
-      <div className="w-screen h-screen flex flex-col md:flex-row p-5 noise bg-neutral-800  relative">
-        <IntroCard />
-        <AboutCard />
-        {/* <Blob /> */}
+      <div className="w-screen h-screen   bg-slate-950 bg-opacity-90 relative">
+        <div className="w-full h-full backdrop-blur-3xl  ">
+          <div className="flex flex-col md:flex-row ">
+            <IntroCard />
+            <AboutCard />
+          </div>
+        </div>
+        <Blob />
       </div>
     </>
   );

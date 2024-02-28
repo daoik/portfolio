@@ -11,45 +11,34 @@ const Blob = () => {
     "M26.6,-50.8C33.2,-42.2,36.4,-32.6,41.8,-23.9C47.1,-15.3,54.6,-7.6,61.6,4.1C68.7,15.8,75.3,31.6,70.2,40.5C65,49.4,48,51.5,34.3,56.1C20.6,60.6,10.3,67.6,-2.7,72.3C-15.7,76.9,-31.3,79.2,-39.8,71.6C-48.3,64.1,-49.7,46.8,-50.4,33.2C-51.2,19.6,-51.5,9.8,-56.4,-2.8C-61.3,-15.5,-70.8,-30.9,-67.5,-40.1C-64.2,-49.4,-48.1,-52.4,-34.7,-57C-21.3,-61.7,-10.7,-68,-0.3,-67.4C10,-66.8,20,-59.3,26.6,-50.8Z",
     "M37.9,-63.5C49,-59.2,57.9,-48.9,66.9,-37.3C75.9,-25.7,85.1,-12.8,84.7,-0.2C84.3,12.4,74.2,24.7,66.5,38.6C58.9,52.6,53.6,68.1,42.9,72.1C32.2,76.1,16.1,68.7,1.2,66.6C-13.7,64.6,-27.4,67.9,-36.9,63.1C-46.4,58.4,-51.7,45.7,-59.3,33.8C-67,21.9,-76.9,11,-80.4,-2C-83.9,-15,-80.8,-30,-72.6,-40.8C-64.4,-51.6,-51,-58.3,-38,-61.5C-25,-64.7,-12.5,-64.4,0.4,-65.2C13.4,-65.9,26.8,-67.7,37.9,-63.5Z",
   ];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % paths.length);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [paths.length]);
 
   return (
-    <svg
-      className="absolute z-0 left-0"
-      viewBox="0 0 400 400"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <motion.path
-        d={paths[index]}
-        fill="#FAFAFA"
-        initial={false}
-        animate={{ d: paths[index] }}
-        transition={{ type: "spring", stiffness: 160 }}
-        transform="translate(100 80)"
-        className=" fill-emerald-300 "
+    <>
+      <svg
+        className="fixed  -z-10 top-0 left-0 "
+        viewBox="0 0 400 400"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        {" "}
-      </motion.path>
-      {/* <foreignObject width="300" height="400" transform="translate(50 50)">
-        <div className="text-4xl bold bg-emerald-300 w-min text-pink-500 rounded-xl p-1 ">
-          About
-        </div>
-        <p className="text-sm text-pretty  p-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-          perferendis nemo in iusto, enim vel, expedita obcaecati voluptate quo
-          reprehenderit sunt minus fuga fugiat aliquid molestiae, atque magnam
-          autem unde!
-        </p>
-      </foreignObject> */}
-    </svg>
+        <path
+          d={paths[1]}
+          fill="#FAFAFA"
+          transform="translate(100 80)"
+          className=" fill-pink-400 opacity-80  noise"
+        ></path>
+      </svg>
+      <svg
+        className="absolute  -z-10 top-0 right-0 "
+        viewBox="0 0 400 400"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d={paths[4]}
+          fill="#FAFAFA"
+          transform="translate(300 100)"
+          className=" fill-pink-400 opacity-80  noise"
+        ></path>
+      </svg>
+    </>
   );
 };
 
