@@ -21,8 +21,8 @@ const AboutCard = () => {
           >
             I'm a frontend developer who's genuinely passionate about crafting
             user-centric experiences. With a knack for design and a love for
-            clean interfaces, I work with HTML, CSS, and JavaScript, along with
-            frameworks like React and Next. While I enjoy creating intricate
+            clean interfaces, I work primarily with React or Next.js, combined
+            with libraries like Tailwind CSS. While I enjoy creating intricate
             designs, my focus is always on making them intuitive and responsive.
             Collaborating with diverse teams, I strive to deliver products that
             not only meet user needs but also align with business objectives.
