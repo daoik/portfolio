@@ -1,11 +1,12 @@
 import Blob from "./components/Blob";
 import "./App.css";
-import developer from "./assets/developer_male.png";
+
 import artist from "./assets/digital_artist_male.png";
 import IntroCard from "./components/IntroCard";
 import AboutCard from "./components/AboutCard";
 import TechStack from "./components/TechStack";
-
+import AnimatedDeveloper from "./components/AnimatedDeveloper";
+// import AnimatedDesigner from "./components/AnimatedDesigner";
 function App() {
   return (
     <>
@@ -13,10 +14,10 @@ function App() {
         <div className="w-full h-full backdrop-blur-3xl  ">
           <div className="flex justify-center items-center flex-col md:flex-row ">
             <IntroCard />
-            <img src={developer} alt="Developer Image" className=" h-96" />
+            <AnimatedDeveloper />
           </div>
           <div className="flex w-full justify-center items-center flex-col-reverse md:flex-row ">
-            <img src={artist} alt="Developer Image" className=" h-96" />
+            <img src={artist} alt="Artist Image" className=" h-96" />
             <AboutCard />
           </div>{" "}
           <TechStack />
