@@ -17,10 +17,9 @@ function App() {
             <AnimatedDeveloper />
           </div>
           <div className="flex w-full justify-center items-center flex-col-reverse md:flex-row ">
-            {/* <img src={artist} alt="Artist Image" className=" h-96" /> */}
             <AnimatedDesigner />
             <AboutCard />
-          </div>{" "}
+          </div>
           <TechStack />
         </div>
         <Blob />

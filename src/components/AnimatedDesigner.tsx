@@ -8,15 +8,10 @@ const AnimatedDesigner = () => {
   return (
     <div className="relative">
       <img src={artistSolo} alt="Developer Image" className=" h-96" />
-      {/* <img
-        src={developerSolo}
-        alt="Developer Person"
-        className="absolute top-0 h-96"
-      /> */}
       <img
         src={palette}
         alt="Spinning Palette"
-        className="absolute top-28 animate-pulse left-10 h-16"
+        className="absolute top-32 animate-pulse left-6 h-16"
       />
       <img
         src={frame}
