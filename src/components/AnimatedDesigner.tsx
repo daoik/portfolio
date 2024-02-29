@@ -34,9 +34,14 @@ const AnimatedDesigner = () => {
         className="absolute animate-wave top-20 left-40 h-3"
       />
       <img
+        src={blink4}
+        alt="Blink 4"
+        className="absolute animate-bounce  delay-75 top-20 left-20 h-3"
+      />
+      <img
         src={blink6}
         alt="Blink 6"
-        className="absolute animate-bounce  delay-75 top-20 left-20 h-3"
+        className="absolute animate-bounce  delay-75 bottom-16 left-40 h-2.5 "
       />
     </div>
   );

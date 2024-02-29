@@ -3,7 +3,7 @@ import cog from "../assets/cog.png";
 import windows from "../assets/windows.png";
 import blink1 from "../assets/blink1.png";
 import blink2 from "../assets/blink2.png";
-import blink3 from "../assets/blink3.png";
+
 const AnimatedDeveloper = () => {
   return (
     <div className="relative">
@@ -25,17 +25,17 @@ const AnimatedDeveloper = () => {
       />
       <img
         src={blink1}
-        alt="Blink 1"
+        alt="Turqoise Blink"
         className="absolute animate-wave top-64 left-14 h-4"
       />
       <img
         src={blink2}
-        alt="Blink 2"
-        className="absolute animate-wave bottom-16 left-32 h-3"
+        alt="Pink Blink"
+        className="absolute animate-bounce bottom-16 left-32 h-3"
       />
       <img
-        src={blink3}
-        alt="Blink 3"
+        src={blink2}
+        alt="Pink Blink"
         className="absolute animate-bounce  delay-75 bottom-20 right-20 h-3"
       />
     </div>
