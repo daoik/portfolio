@@ -11,7 +11,7 @@ const AboutCard = () => {
           className="w-full h-full p-4"
         >
           {" "}
-          <div className="text-5xl p-1 py-5 font-semibold">
+          <div className="text-3xl p-1 py-5 font-semibold">
             {`<`}About{`/>`}
           </div>{" "}
           <motion.p

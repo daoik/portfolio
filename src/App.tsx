@@ -28,16 +28,52 @@ function App() {
             <img src={artist} alt="Developer Image" className=" h-96" />
             <AboutCard />
           </div>{" "}
-          <div className="w-full flex-row flex h-44 py-5 shadow-inner  bg-gradient-to-br from-slate-950 to-slate-900">
-            <img src={html5} alt="html5 logo" className=" " />{" "}
-            <img src={css} alt="css3 logo" className=" " />
-            <img src={js} alt="js logo" className=" " />
-            <img src={ts} alt="ts logo" className=" " />
-            <img src={node} alt="node logo" className=" " />
-            <img src={react} alt="react logo" className=" " />
-            <img src={next} alt="next logo" className=" " />
-            <img src={tailwind} alt="tailwind logo" className=" " />
-            <img src={figma} alt="figma logo" className=" " />
+          <div className="w-full flex-row  flex h-44 py-5 shadow-inner  bg-gradient-to-br from-slate-950 to-slate-900">
+            <img
+              src={html5}
+              alt="html5 logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />{" "}
+            <img
+              src={css}
+              alt="css3 logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={js}
+              alt="js logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={ts}
+              alt="ts logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={node}
+              alt="node logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={react}
+              alt="react logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={next}
+              alt="next logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={tailwind}
+              alt="tailwind logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
+            <img
+              src={figma}
+              alt="figma logo"
+              className="transition-all duration-300 saturate-0 hover:saturate-100"
+            />
           </div>
           <div className="flex w-full justify-center items-center flex-col-reverse md:flex-row ">
             <AboutCard />
