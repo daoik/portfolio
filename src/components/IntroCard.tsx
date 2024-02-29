@@ -1,8 +1,6 @@
 import memoji from "../assets/memoji.png";
-
 import { FaDownload } from "react-icons/fa";
 import LinkButtons from "./LinkButtons";
-import Blob from "./Blob";
 
 const IntroCard = () => {
   return (

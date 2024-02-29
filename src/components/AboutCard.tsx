@@ -10,7 +10,6 @@ const AboutCard = () => {
           transition={{ duration: 0.5 }} // Transition duration
           className="w-full h-full p-4"
         >
-          {" "}
           <div className="text-3xl p-1 py-5 font-semibold">
             {`<`}About{`/>`}
           </div>{" "}
@@ -20,7 +19,6 @@ const AboutCard = () => {
             transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
             className="ps-8 tex-lg"
           >
-            {" "}
             Passionate and dedicated Frontend Developer with a keen eye for
             design and a flair for creating intuitive user experiences.
             Proficient in HTML, CSS, JavaScript, and modern frontend frameworks
