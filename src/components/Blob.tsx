@@ -15,15 +15,14 @@ const Blob = () => {
   return (
     <>
       <svg
-        className="fixed  -z-10 top-0 left-0 "
+        className="absolute  -z-10 top-0 left-0 "
         viewBox="0 0 400 400"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d={paths[1]}
-          fill="#FAFAFA"
           transform="translate(100 80)"
-          className=" fill-pink-400 opacity-80  noise"
+          className=" fill-pink-400   "
         ></path>
       </svg>
       <svg
@@ -33,7 +32,6 @@ const Blob = () => {
       >
         <path
           d={paths[4]}
-          fill="#FAFAFA"
           transform="translate(300 100)"
           className=" fill-pink-400 opacity-80  noise"
         ></path>

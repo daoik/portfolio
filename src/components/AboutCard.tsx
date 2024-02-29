@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Blob from "./Blob";
 const AboutCard = () => {
   return (
-    <div className="m-2 w-96 text-neutral-200 mx-auto">
+    <div className="m-2 w-96 text-neutral-200">
       <div className="rounded-lg w-full  relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }} // Initial animation values

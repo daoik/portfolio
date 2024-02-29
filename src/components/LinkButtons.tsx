@@ -37,7 +37,7 @@ const LinkButtons = () => {
           <a href={link.href}>
             {React.cloneElement(link.icon, {
               className:
-                "w-10 p-1  h-10 text-stone-800 transition-all duration-75  group-hover:text-pink-600 ",
+                "w-10 p-1  h-10 text-stone-800 transition-all duration-200  group-hover:text-pink-600 ",
             })}
           </a>
         </motion.div>

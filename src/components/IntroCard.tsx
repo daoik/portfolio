@@ -1,11 +1,12 @@
 import memoji from "../assets/memoji.png";
+
 import { FaDownload } from "react-icons/fa";
 import LinkButtons from "./LinkButtons";
 import Blob from "./Blob";
 
 const IntroCard = () => {
   return (
-    <div className="m-2 w-fit mx-auto ">
+    <div className="m-2 w-fit mt-10  ">
       <div className="rounded-lg w-96 relative ">
         <div className="w-full h-full p-5">
           <div className="flex justify-between">
