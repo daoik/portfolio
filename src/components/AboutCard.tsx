@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Blob from "./Blob";
+
 const AboutCard = () => {
   return (
     <div className="m-2 w-96 text-neutral-200">

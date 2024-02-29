@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Blob from "./components/Blob";
 import "./App.css";
 import developer from "./assets/developer_male.png";
