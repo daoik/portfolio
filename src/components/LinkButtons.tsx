@@ -12,7 +12,7 @@ const LinkButtons = () => {
   const buttonDelay = 0.1;
 
   return (
-    <div className="inline-flex mt-4  justify-center space-x-5 w-full ">
+    <div className="inline-flex mt-4  justify-center space-x-10 w-full ">
       {[
         { href: "https://github.com/daoik", icon: <FaGithub /> },
         {
