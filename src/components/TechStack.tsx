@@ -14,47 +14,47 @@ const TechStack = () => {
       <img
         src={html5}
         alt="html5 logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />{" "}
       <img
         src={css}
         alt="css3 logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
       <img
         src={js}
         alt="js logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
       <img
         src={ts}
         alt="ts logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
       <img
         src={node}
         alt="node logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
       <img
         src={react}
         alt="react logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
       <img
         src={next}
         alt="next logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300 opacity-75 hover:opacity-100"
       />
       <img
         src={tailwind}
         alt="tailwind logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
       <img
         src={figma}
         alt="figma logo"
-        className="transition-all duration-300 saturate-0 hover:saturate-100"
+        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
       />
     </div>
   );
