@@ -6,7 +6,7 @@ import IntroCard from "./components/IntroCard";
 import AboutCard from "./components/AboutCard";
 import TechStack from "./components/TechStack";
 import AnimatedDeveloper from "./components/AnimatedDeveloper";
-// import AnimatedDesigner from "./components/AnimatedDesigner";
+import AnimatedDesigner from "./components/AnimatedDesigner";
 function App() {
   return (
     <>
@@ -17,7 +17,8 @@ function App() {
             <AnimatedDeveloper />
           </div>
           <div className="flex w-full justify-center items-center flex-col-reverse md:flex-row ">
-            <img src={artist} alt="Artist Image" className=" h-96" />
+            {/* <img src={artist} alt="Artist Image" className=" h-96" /> */}
+            <AnimatedDesigner />
             <AboutCard />
           </div>{" "}
           <TechStack />
