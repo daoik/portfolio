@@ -7,55 +7,32 @@ import next from "../assets/icons/next.svg";
 import tailwind from "../assets/icons/tailwind.svg";
 import figma from "../assets/icons/figma.svg";
 import node from "../assets/icons/node.svg";
+import { motion } from "framer-motion";
 
 const TechStack = () => {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 0.8 },
+  };
+
+  const delay = 0.2;
+
   return (
-    <div className="w-full flex-row border-t-2 border-b-2 border-teal-950 flex h-44 py-5 shadow-inner  bg-gradient-to-br from-slate-950 to-slate-900">
-      <img
-        src={html5}
-        alt="html5 logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />{" "}
-      <img
-        src={css}
-        alt="css3 logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
-      <img
-        src={js}
-        alt="js logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
-      <img
-        src={ts}
-        alt="ts logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
-      <img
-        src={node}
-        alt="node logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
-      <img
-        src={react}
-        alt="react logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
-      <img
-        src={next}
-        alt="next logo"
-        className="transition-all duration-300 opacity-75 hover:opacity-100"
-      />
-      <img
-        src={tailwind}
-        alt="tailwind logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
-      <img
-        src={figma}
-        alt="figma logo"
-        className="transition-all duration-300  opacity-80 hover:opacity-100 saturate-0 hover:saturate-100"
-      />
+    <div className="w-full flex-row border-t-2 border-b-2 border-teal-950 flex h-44 py-5 shadow-inner group bg-gradient-to-br from-slate-950 to-slate-900">
+      {[html5, css, js, ts, react, next, tailwind, figma, node].map(
+        (img, index) => (
+          <motion.img
+            src={img}
+            key={index}
+            alt="html5 logo"
+            transition={{ delay: index * delay }}
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            className="group-hover:transition-all group-hover:saturate-[33%] hover:scale-110 hover:opacity-100 saturate-0 hover:!saturate-100"
+          />
+        )
+      )}
     </div>
   );
 };

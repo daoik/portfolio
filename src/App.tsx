@@ -1,7 +1,5 @@
 import Blob from "./components/Blob";
 import "./App.css";
-
-import artist from "./assets/digital_artist_male.png";
 import IntroCard from "./components/IntroCard";
 import AboutCard from "./components/AboutCard";
 import TechStack from "./components/TechStack";
