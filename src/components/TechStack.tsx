@@ -36,7 +36,7 @@ const TechStack = () => {
         )}
       </div>
       <div className="mx-auto">
-        <div className="m-2 w-96 text-neutral-200">
+        <div className="m-2 w-96 text-center text-neutral-200">
           <div className="rounded-lg w-full  relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }} // Initial animation values
@@ -51,7 +51,7 @@ const TechStack = () => {
                 initial={{ opacity: 0, y: 20 }} // Initial animation values
                 animate={{ opacity: 1, y: 0 }} // Animation to perform
                 transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
-                className="ps-8 tex-lg"
+                className=" text-lg"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                 ipsum expedita accusantium dignissimos eaque similique doloribus

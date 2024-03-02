@@ -17,7 +17,7 @@ const AboutMe = () => {
             initial={{ opacity: 0, y: 20 }} // Initial animation values
             animate={{ opacity: 1, y: 0 }} // Animation to perform
             transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
-            className="ps-8 tex-lg"
+            className="ps-8 "
           >
             I'm a frontend developer who's genuinely passionate about crafting
             user-centric experiences. With a knack for design and a love for
