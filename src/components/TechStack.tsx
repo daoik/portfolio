@@ -18,21 +18,50 @@ const TechStack = () => {
   const delay = 0.2;
 
   return (
-    <div className="w-full flex-row border-t-2 border-b-2 border-teal-950 flex h-44 py-5 shadow-inner group bg-gradient-to-br from-slate-950 to-slate-900">
-      {[html5, css, js, ts, react, next, tailwind, figma, node].map(
-        (img, index) => (
-          <motion.img
-            src={img}
-            key={index}
-            alt="html5 logo"
-            transition={{ delay: index * delay }}
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            className="group-hover:transition-all cursor-pointer hover:scale-110 hover:opacity-100 !saturate-0 hover:!saturate-100 hover:sibling-saturate-50"
-          />
-        )
-      )}
+    <div className="flex flex-col">
+      <div className="w-full flex-row border-t-2 border-b-2 border-teal-950 flex h-44 py-5 shadow-inner group bg-gradient-to-br from-slate-950 to-slate-900">
+        {[html5, css, js, ts, react, next, tailwind, figma, node].map(
+          (img, index) => (
+            <motion.img
+              src={img}
+              key={index}
+              alt="html5 logo"
+              transition={{ delay: index * delay }}
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              className="group-hover:transition-all cursor-pointer hover:scale-110 hover:opacity-100 !saturate-0 hover:!saturate-100 hover:sibling-saturate-50"
+            />
+          )
+        )}
+      </div>
+      <div className="mx-auto">
+        <div className="m-2 w-96 text-neutral-200">
+          <div className="rounded-lg w-full  relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }} // Initial animation values
+              animate={{ opacity: 1, y: 0 }} // Animation to perform
+              transition={{ duration: 0.5 }} // Transition duration
+              className="w-full h-full p-4"
+            >
+              <div className="text-3xl p-1 py-5 font-semibold">
+                {`<`}Tech Stack{`/>`}
+              </div>{" "}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }} // Initial animation values
+                animate={{ opacity: 1, y: 0 }} // Animation to perform
+                transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
+                className="ps-8 tex-lg"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                ipsum expedita accusantium dignissimos eaque similique doloribus
+                provident soluta impedit porro, est earum molestiae commodi
+                dolores. Porro itaque nostrum facere necessitatibus!
+              </motion.p>
+            </motion.div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
