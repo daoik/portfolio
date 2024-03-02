@@ -1,7 +1,7 @@
 import Blob from "./components/Blob";
 import "./App.css";
 import IntroCard from "./components/IntroCard";
-import AboutCard from "./components/AboutCard";
+import AboutCard from "./components/AboutMe";
 import TechStack from "./components/TechStack";
 import AnimatedDeveloper from "./components/AnimatedDeveloper";
 import AnimatedDesigner from "./components/AnimatedDesigner";

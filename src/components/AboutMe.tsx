@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const AboutCard = () => {
+const AboutMe = () => {
   return (
     <div className="m-2 w-96 text-neutral-200">
       <div className="rounded-lg w-full  relative">
@@ -36,4 +36,4 @@ const AboutCard = () => {
   );
 };
 
-export default AboutCard;
+export default AboutMe;

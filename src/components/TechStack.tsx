@@ -29,7 +29,7 @@ const TechStack = () => {
             variants={variants}
             initial="hidden"
             animate="visible"
-            className="group-hover:transition-all group-hover:saturate-[33%] hover:scale-110 hover:opacity-100 saturate-0 hover:!saturate-100"
+            className="group-hover:transition-all cursor-pointer hover:scale-110 hover:opacity-100 !saturate-0 hover:!saturate-100 hover:sibling-saturate-50"
           />
         )
       )}
