@@ -53,10 +53,12 @@ const TechStack = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
                 className=" text-lg"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                ipsum expedita accusantium dignissimos eaque similique doloribus
-                provident soluta impedit porro, est earum molestiae commodi
-                dolores. Porro itaque nostrum facere necessitatibus!
+                While I may be good using a specific tech stack which includes
+                React Next.js and Tailwind, by leveraging the power of LLMs and
+                Artificial Intelligence, I can quickly learn and adapt to new
+                technologies and frameworks, in a matter of days. Right now I am
+                working in using different frontend frameworks like Angular, Vue
+                and Svelte.
               </motion.p>
             </motion.div>
           </div>
