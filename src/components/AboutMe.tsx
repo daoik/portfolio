@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="rounded-lg w-full  relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }} // Initial animation values
-          animate={{ opacity: 1, y: 0 }} // Animation to perform
+          whileInView={{ opacity: 1, y: 0 }} // Animation to perform
           transition={{ duration: 0.5 }} // Transition duration
           className="w-full h-full p-4"
         >
@@ -15,7 +15,7 @@ const AboutMe = () => {
           </div>{" "}
           <motion.p
             initial={{ opacity: 0, y: 20 }} // Initial animation values
-            animate={{ opacity: 1, y: 0 }} // Animation to perform
+            whileInView={{ opacity: 1, y: 0 }} // Animation to perform
             transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
             className="ps-8 "
           >
