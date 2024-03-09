@@ -5,6 +5,7 @@ import AboutCard from "./components/AboutMe";
 import TechStack from "./components/TechStack";
 import AnimatedDeveloper from "./components/AnimatedDeveloper";
 import AnimatedDesigner from "./components/AnimatedDesigner";
+import PastWorks from "./components/PastWorks";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
             <AboutCard />
           </div>
           <TechStack />
+          <PastWorks />
         </div>
         <Blob />
       </div>
