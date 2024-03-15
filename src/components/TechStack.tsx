@@ -19,24 +19,8 @@ const TechStack = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="w-full flex-row border-t-2 border-b-2 border-teal-950 flex h-44 py-5 shadow-inner group bg-gradient-to-br from-slate-950 to-slate-900">
-        {[html5, css, js, ts, react, next, tailwind, figma, node].map(
-          (img, index) => (
-            <motion.img
-              src={img}
-              key={index}
-              alt="html5 logo"
-              transition={{ delay: index * delay }}
-              variants={variants}
-              initial="hidden"
-              whileInView="visible"
-              className="group-hover:transition-all cursor-pointer hover:scale-110 hover:opacity-100 !saturate-0 hover:!saturate-100 hover:sibling-saturate-50"
-            />
-          )
-        )}
-      </div>
-      <div className="mx-auto">
-        <div className="m-2 w-96 text-center text-neutral-200">
+      <div className="mx-auto w-full justify-center flex">
+        <div className="m-2 w-1/2 text-center text-neutral-200">
           <div className="rounded-lg w-full  relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }} // Initial animation values
@@ -54,7 +38,7 @@ const TechStack = () => {
                 className=" text-lg"
               >
                 While I may be good using a specific tech stack which includes
-                React Next.js and Tailwind, by leveraging the power of LLMs and
+                React, Next.js and Tailwind, by leveraging the power of LLMs and
                 Artificial Intelligence, I can quickly learn and adapt to new
                 technologies and frameworks, in a matter of days. Right now I am
                 working in using different frontend frameworks like Angular, Vue
@@ -63,6 +47,22 @@ const TechStack = () => {
             </motion.div>
           </div>
         </div>
+      </div>
+      <div className="w-full flex-row border-t-2 border-b-2 border-teal-950 flex h-44 py-5 shadow-inner group bg-gradient-to-br from-slate-950 to-slate-900">
+        {[html5, css, js, ts, react, next, tailwind, figma, node].map(
+          (img, index) => (
+            <motion.img
+              src={img}
+              key={index}
+              alt="html5 logo"
+              transition={{ delay: index * delay }}
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              className="group-hover:transition-all cursor-pointer hover:scale-110 hover:opacity-100 !saturate-0 hover:!saturate-100 hover:sibling-saturate-50"
+            />
+          )
+        )}
       </div>
     </div>
   );
