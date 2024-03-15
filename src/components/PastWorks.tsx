@@ -46,7 +46,7 @@ const PastWorks = () => {
               initial={{ opacity: 0, y: 20 }} // Initial animation values
               whileInView={{ opacity: 1, y: 0 }} // Animation to perform
               transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
-              className=" mb-8  md:w-48"
+              className=" mb-8  md:w-48 text-end"
             >
               {" "}
               The application is used by a large corporation to track their sea
@@ -64,6 +64,35 @@ const PastWorks = () => {
               "src/images/Pry4.png",
             ]}
           />
+        </motion.div>{" "}
+      </div>
+      <div className="w-full justify-center flex mt-5">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Initial animation values
+          whileInView={{ opacity: 1, y: 0 }} // Animation to perform
+          transition={{ duration: 0.5 }} // Transition duration
+          className="w-2/3 h-full p-4 md:flex px-10"
+        >
+          {" "}
+          <img
+            src="src/images/Luiss.png"
+            alt={`Portfolio Image `}
+            className="w-2/3 rounded-2xl h-96 object-cover px-2 mx-2 me-10"
+          />
+          <div className="flex  flex-col">
+            <div className="text-2xl p-1 py-5 font-semibold">School Page</div>{" "}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }} // Initial animation values
+              whileInView={{ opacity: 1, y: 0 }} // Animation to perform
+              transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
+              className=" mb-8  md:w-48"
+            >
+              {" "}
+              This was part of my work on Deloitte. It is a web page that is
+              currently being used by an active university in Italy. I was given
+              a design and only implemented it.
+            </motion.p>
+          </div>
         </motion.div>{" "}
       </div>
     </div>

@@ -7,16 +7,19 @@ export default function CarouselComponent({
   pictures: string[];
 }) {
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
   };
 
   return (
     <Slider
-      className="w-full md:w-3/4 flex-1 mx-auto md:ms-20 self-center"
+      className="w-full md:w-3/4 flex-1 mx-auto ms-2 self-center"
       {...sliderSettings}
     >
       {pictures.map((picture, index) => (
