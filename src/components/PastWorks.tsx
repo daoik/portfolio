@@ -80,7 +80,9 @@ const PastWorks = () => {
             className="w-2/3 rounded-2xl h-96 object-cover px-2 mx-2 me-10"
           />
           <div className="flex  flex-col">
-            <div className="text-2xl p-1 py-5 font-semibold">School Page</div>{" "}
+            <div className="text-2xl p-1 py-5 font-semibold">
+              University Page
+            </div>{" "}
             <motion.p
               initial={{ opacity: 0, y: 20 }} // Initial animation values
               whileInView={{ opacity: 1, y: 0 }} // Animation to perform
