@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 const PastWorks = () => {
   return (
-    <div className="w-full text-neutral-200 mx-auto ">
+    <div className="w-full text-neutral-200 mx-auto">
       <div className="m-2 w-1/2 text-center mx-auto ">
         <div className="rounded-lg w-full  relative">
           <motion.div

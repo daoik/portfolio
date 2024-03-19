@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen w-screen bg-slate-900 bg-opacity-90 relative">
-        <div className="w-full h-full backdrop-blur-3xl  ">
+        <div className="w-full h-full backdrop-blur-3xl">
           <div className="flex justify-center items-center flex-col md:flex-row ">
             <IntroCard />
             <AnimatedDeveloper />
@@ -19,6 +19,7 @@ function App() {
             <AnimatedDesigner />
             <AboutCard />
           </div>
+
           <TechStack />
           <PastWorks />
         </div>

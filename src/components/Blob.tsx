@@ -9,7 +9,7 @@ const Blob = () => {
   ];
 
   return (
-    <>
+    <div className="min-h-screen ">
       <svg
         className="absolute  -z-10 top-0 left-0 "
         viewBox="0 0 400 400"
@@ -43,7 +43,18 @@ const Blob = () => {
           className=" fill-pink-400 opacity-80  noise"
         ></path>
       </svg>
-    </>
+      <svg
+        className="absolute  -z-10 top-0 right-0 "
+        viewBox="0 0 400 900"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d={paths[3]}
+          transform="translate(310 420)"
+          className=" fill-pink-400 opacity-80  noise"
+        ></path>
+      </svg>
+    </div>
   );
 };
 
