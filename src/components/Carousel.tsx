@@ -19,7 +19,7 @@ export default function CarouselComponent({
 
   return (
     <Slider
-      className="w-full md:w-3/4 flex-1 mx-auto ms-2 self-center"
+      className="w-full md:w-3/4 flex-1 mx-auto ms-8 self-center"
       {...sliderSettings}
     >
       {pictures.map((picture, index) => (

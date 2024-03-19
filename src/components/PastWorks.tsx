@@ -74,11 +74,19 @@ const PastWorks = () => {
           className="w-2/3 h-full p-4 md:flex px-10"
         >
           {" "}
-          <img
-            src="src/images/Luiss.png"
-            alt={`Portfolio Image `}
-            className="w-2/3 rounded-2xl h-96 object-cover px-2 mx-2 me-10"
-          />
+          <div className="w-full flex justify-center  group relative overflow-hidden me-5">
+            <img
+              src="src/images/Luiss.png"
+              alt={`Portfolio Image `}
+              className="object-cover rounded-2xl h-96 px-2 mx-2  group-hover:opacity-25 transition-all "
+            />
+            <a
+              className="self-center rounded border p-2 absolute invisible group-hover:visible hover:opacity-75"
+              href="https://www.luiss.it"
+            >
+              Click here to visit
+            </a>
+          </div>
           <div className="flex  flex-col">
             <div className="text-2xl p-1 py-5 font-semibold">
               University Page
