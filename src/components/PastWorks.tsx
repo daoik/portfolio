@@ -104,6 +104,45 @@ const PastWorks = () => {
             </motion.p>
           </div>
         </motion.div>{" "}
+      </div>{" "}
+      <div className="w-full justify-center flex mt-5">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Initial animation values
+          whileInView={{ opacity: 1, y: 0 }} // Animation to perform
+          transition={{ duration: 0.5 }} // Transition duration
+          className="w-2/3 h-full p-4 md:flex px-10"
+        >
+          {" "}
+          <div className="flex  flex-col">
+            <div className="text-2xl p-1 py-5 font-semibold">
+              Cryptoverse Explorer
+            </div>{" "}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }} // Initial animation values
+              whileInView={{ opacity: 1, y: 0 }} // Animation to perform
+              transition={{ duration: 0.5, delay: 0.2 }} // Transition duration with a delay
+              className=" mb-8  md:w-48"
+            >
+              {" "}
+              Just a quick proof-of-concept done in a few days. A
+              crypto-exchange implemented in React, as a personal project. It
+              integrates CoinGecko API.
+            </motion.p>
+          </div>
+          <div className="w-full flex justify-center  group relative overflow-hidden ms-5">
+            <img
+              src="src/images/Cryptoverse.png"
+              alt={`Portfolio Image `}
+              className="object-cover rounded-2xl h-96 px-2 mx-2  group-hover:opacity-25 transition-all "
+            />
+            <a
+              className="self-center rounded border p-2 absolute invisible group-hover:visible hover:opacity-75"
+              href="https://daoik.github.io/cryptoverse-explorer/"
+            >
+              Click here to visit
+            </a>
+          </div>
+        </motion.div>{" "}
       </div>
     </div>
   );
