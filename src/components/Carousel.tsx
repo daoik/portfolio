@@ -23,11 +23,11 @@ export default function CarouselComponent({
       {...sliderSettings}
     >
       {pictures.map((picture, index) => (
-        <div key={index}>
+        <div key={index} className="p-1 px-2">
           <img
             src={picture}
             alt={`Portfolio Image ${index}`}
-            className="w-full rounded-2xl h-96 object-cover px-2 mx-2"
+            className="w-full rounded-2xl h-96 object-cover "
           />
         </div>
       ))}
